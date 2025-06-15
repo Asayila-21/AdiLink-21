@@ -1,0 +1,440 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #111;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* COULEURS adidas */
+:root {
+    --adidas-blue: #0085CC;
+    --adidas-black: #000;
+    --adidas-white: #fff;
+}
+
+/* BOUTONS */
+.btn {
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+    padding: 0.8em 1.6em;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: var(--adidas-blue);
+}
+
+/* HEADER */
+header {
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--adidas-black);
+    font-weight: 500;
+}
+
+nav .btn {
+    background-color: var(--adidas-blue);
+}
+
+/* HERO */
+#hero {
+    background-image: url('img/adidas3.jpg');
+    background-size: cover;
+    background-position: right;
+    padding: 140px 0;
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 600px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+/* À PROPOS */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.about .text {
+    flex: 1;
+}
+
+.about img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* POLICES POUR LA SECTION À PROPOS */
+#apropos h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+#apropos p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+
+/* SECTION NOUS CONTACTER (contact et commentaire) */
+#contact-info,
+#commentaires {
+    background-color: var(--adidas-black);
+    color: var(--adidas-white);
+    padding: 80px 0;
+
+}
+
+#contact-info h2,
+#contact-info p,
+#commentaires h2,
+#commentaires label {
+    color: var(--adidas-white);
+}
+
+#contact-info .btn,
+#commentaires .btn {
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact-info .btn:hover,
+#commentaires .btn:hover {
+    background-color: var(--adidas-blue);
+    color: var(--adidas-white);
+}
+
+#commentaires input,
+#commentaires textarea {
+    background-color: #f4f4f4;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#commentaires form {
+    margin-top: 2rem;
+}
+
+#contact-info .container,
+#commentaires .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Boutons personnalisés pour les sections contact */
+#contact-info .btn,
+#commentaires .btn {
+    position: center;
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+    border: none;
+    border-radius: 50px;
+    padding: 0.8em 1.6em;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#contact-info .btn:hover,
+#commentaires .btn:hover {
+    position: center;
+    background-color: var(--adidas-blue);
+    color: var(--adidas-white);
+    transform: translateY(-3px);
+    /* effet de soulèvement */
+    box-shadow: 0 6px 16px rgba(0, 133, 204, 0.3);
+    /* ombre bleutée */
+}
+
+
+/* AVIS */
+.avis-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    color: var(--adidas-black);
+}
+
+.avis-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.avis-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.avis-card strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--adidas-blue);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--adidas-black);
+    color: white;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+footer ul a {
+    color: #bbb;
+}
+
+footer .socials img {
+    width: 24px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1);
+}
+
+footer p {
+    font-size: 0.85em;
+    color: #aaa;
+}
+
+/* Bouton général */
+.btn {
+    padding: 0.8em 1.6em;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Bouton du header */
+header .btn {
+    background-color: var(--adidas-blue);
+    color: var(--adidas-white);
+}
+
+header .btn:hover {
+    background-color: #005f99;
+}
+
+/* Bouton sur HERO (fond sombre) */
+#hero .btn {
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+}
+
+#hero .btn:hover {
+    background-color: var(--adidas-blue);
+    color: var(--adidas-white);
+}
+
+/* Bouton sur section À propos (fond clair) */
+#apropos .btn {
+    background-color: var(--adidas-black);
+    color: var(--adidas-white);
+}
+
+#apropos .btn:hover {
+    background-color: var(--adidas-blue);
+}
+
+/* Bouton section Produits (fond clair) */
+#produits .btn {
+    background-color: var(--adidas-blue);
+    color: var(--adidas-white);
+}
+
+#produits .btn:hover {
+    background-color: #005f99;
+}
+
+/* Optionnel - Avis */
+#avis .btn {
+    background-color: var(--adidas-blue);
+    color: var(--adidas-white);
+}
+
+#avis .btn:hover {
+    background-color: #005f99;
+}
+
+/* --- SECTION À PROPOS (fond noir, texte blanc, boutons adaptés) --- */
+#apropos {
+    background-color: var(--adidas-black);
+    color: var(--adidas-white);
+}
+
+#apropos h2,
+#apropos p {
+    color: var(--adidas-white);
+}
+
+#apropos .btn {
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#apropos .btn:hover {
+    background-color: var(--adidas-blue);
+    color: var(--adidas-white);
+}
+
+
+/* --- SECTION AVIS (fond noir, texte blanc, boutons adaptés si ajoutés) --- */
+#avis {
+    background-color: var(--adidas-black);
+    color: var(--adidas-white);
+}
+
+#avis h2 {
+    color: var(--adidas-white);
+}
+
+.avis-card {
+    background-color: #fff;
+    /* cartes claires pour contraste */
+    color: #111;
+}
+
+/* Si un bouton est utilisé dans la section avis */
+#avis .btn {
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+}
+
+#avis .btn:hover {
+    background-color: var(--adidas-blue);
+    color: var(--adidas-white);
+}
+
+/* --- SECTION PRODUITS (fond noir, texte blanc, boutons adaptés) --- */
+#produits {
+    background-color: var(--adidas-black);
+    color: var(--adidas-white);
+}
+
+#produits h2 {
+    color: var(--adidas-white);
+}
+
+#produits hr {
+    border-color: var(--adidas-white);
+}
+
+.product-card {
+    background-color: #1a1a1a;
+    /* gris foncé pour contraste */
+    color: var(--adidas-white);
+    border-top: 4px solid var(--adidas-blue);
+}
+
+.product-card h3,
+.product-card p {
+    color: var(--adidas-white);
+}
+
+.product-card .btn {
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background-color: var(--adidas-blue);
+    color: var(--adidas-white);
+}
+
+/* Les badges gardent leur style pour attirer l'œil */
+.badge,
+.badge.new {
+    color: white;
+}

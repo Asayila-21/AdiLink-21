@@ -1,0 +1,236 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #111;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* COULEURS adidas */
+:root {
+    --adidas-blue: #0085CC;
+    --adidas-black: #000;
+    --adidas-white: #fff;
+}
+
+/* BOUTONS */
+.btn {
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+    padding: 0.8em 1.6em;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: var(--adidas-blue);
+}
+
+/* HEADER */
+header {
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--adidas-black);
+    font-weight: 500;
+}
+
+nav .btn {
+    background-color: var(--adidas-blue);
+}
+
+/* HERO */
+#hero {
+    background-image: url('img/adidas3.jpg');
+    background-size: cover;
+    background-position: right;
+    padding: 140px 0;
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 600px;
+}
+
+
+/* SECTIONS GÉNÉRIQUES */
+.section {
+    padding: 80px 0;
+    background-color: var(--adidas-white);
+}
+
+.section h2 {
+    text-align: left;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: var(--adidas-black);
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.section hr {
+    border: 2px solid var(--adidas-blue);
+    width: 80px;
+    margin: 10px auto 40px;
+}
+
+/* GRILLE PRODUITS */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding-top: 20px;
+}
+
+/* CARTE PRODUIT */
+.product-card {
+    background: #0f0f0f;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #111;
+}
+
+.product-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+/* SUPPRESSION DES BADGES */
+.badge {
+    display: none !important;
+}
+
+/* FOND GÉNÉRAL */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* FOND NOIR POUR TOUTES LES SECTIONS */
+.section,
+#produits,
+#apropos,
+#avis {
+    background-color: #000;
+    color: #fff;
+}
+
+/* TITRES DES SECTIONS */
+.section h2,
+#produits h2,
+#apropos h2,
+#avis h2 {
+    color: #fff;
+}
+
+/* SÉPARATEUR SOUS TITRES */
+#produits hr,
+.section hr {
+    border-color: #fff;
+}
+
+/* CARTES PRODUITS NOIRES */
+.product-card {
+    background-color: #1a1a1a;
+    /* noir/gris très foncé */
+    color: #fff;
+    border-top: 4px solid var(--adidas-blue);
+}
+
+.product-card h3,
+.product-card p {
+    color: #fff;
+}
+
+/* IMAGES DES CARTES */
+.product-img {
+    border: 2px solid var(--adidas-blue);
+}
+
+/* BOUTON DES CARTES */
+.product-card .btn {
+    background-color: var(--adidas-white);
+    color: var(--adidas-black);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background-color: var(--adidas-blue);
+    color: var(--adidas-white);
+}
